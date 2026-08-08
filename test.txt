@@ -1,0 +1,230 @@
+Day 1
+
+1. Python is an interpreted high level programming language, designed to be simple and easy to use.
+2. Five features of python are:-
+    a) simple and easy to use
+    b) Dynamically typed language
+    c) Big library support
+    d) Interpreted language
+    e) platform independent
+
+3. Python is developed by  Guido van Rossum
+4. Interpreter is a software which has the job to execute the program line by line.
+5. Compiler:-
+    a)A compiler is a program which executes the program at once, it takes the whole code and creates an executable file which is then executed to run the program.
+    b) Compiler returns all the error at once, hard to debug.
+    c) Compiles the program faster than interpreter
+
+   Interpreter:-
+    a)An interprete is also a program which executes the program, but line by line, unlike compiler which executes all the code in one go.
+    b)Interpreter stops if its finds and error.That means it is easy to see which line caused the error.
+    c) Slow compared to a compiler.
+
+6. Keywords are special words reserved in python for some specific tasks. These cannot be used  to assign a value, or as a variable(except soft keywords).
+There are total of 35 keywords among which some of them are:-
+There are keywords:
+    special Keywords:-
+        i) True
+        ii) False
+        iii) None
+    Soft Keywords:-
+        i) _
+        ii) match
+        iii) case
+        iv) type
+
+7. Identifiers are phenomenon of naming a variable, there are rules to name a variable. These rules are:-
+    a) name should start with Alphabet(A-Z, a-z), or underscore(_)
+    b) no special characters are allowed except underscore.
+    c) name should not start with a number, or special characters.
+    d) name should not contain any space
+
+8. Program to print "Hello World"
+    python("Hello World")
+
+9. Check pythons version:-
+    a) open cmd/terminal window
+    b) type: 
+            python --version
+
+10. Python applications:-
+    a) Machine Learning - python contains lots of libraries to make this task easier like scipy, numpy, pandas, matplotlib, except
+    b) Game development - pygame is used to create desktop games
+    c) App development - app is also developed using python
+    d) web development - streamlit or gradio are used for prototyping, and django or flask or fastapi are used for web development
+
+
+Day 2
+
+11. A variable is a name given to a value stored in the memory.
+    For e.g. name = "myName"
+    here name is a varaible which stroes the value "myName" in the memory.
+
+12. A variable is a name given to a value, basically a variable is used to access the value stored in memory.
+    A value is basically strings of 0s and 1s in the memory, variable tells how much of the memory is stored together.
+
+13. Various Datatypes in python:
+    Int
+    - a datatype to store integer values, from - inf to + inf.
+    - default value is 0
+    - a single value datatype
+
+    Float
+    - float datatype is used to store deciaml values.
+    - default value is 0.0
+
+    Bool
+    - This datatype is used when we need answers in True or False, 0 or 1.
+    - we can convert various datatype of variables into bool, the result will be in True or False
+    - For e.g. bool(4.5) -> True
+    - Empty or default values typically converts to False.
+
+    Str
+    - a datatype used to store strings or collection of characters,
+    - it is immutable datatype, that means data once created cannot be manipulated
+    - it can store characters like A-Z, a-z, special characters, numbers
+
+14. Dynamic Typing refers to the concept that datatype needs not to be mentioned while declaring or creating a variable. This is used in python, python automatically assigns the datatype to the declared values depending upon the value provided in the variable.
+
+15. To find the type(datatype) of a variable, write : type(var)
+    for e.g a= 5
+            type(a)
+            output: <class 'str'>
+
+16. Convert string to integer:-
+    a= "5"
+    b= int(a) # this works only if string data is convertable, else throws error
+
+17. Convert float to integer:-
+    a=4.6
+    b=int(a)
+
+18. List and tuple are both collections of objects.
+    Difference b/w list and tuple:
+    - List is mutable, it allows changing its content.
+    - tuple doesnt allow changing its content, its immutable.
+
+    -List is made with square brackets -[]
+    -Tuple is made with paranthesis -()
+
+    -List is not used where security is related.
+    -Tuple is used when security is needed.
+
+19. Difference b/w set and dictionary:-
+    - Set is mutable datatype object, it allows changing its content.
+    - Dictionary is also mutable and allows changing its content.
+
+    - Set contains unique elements in unorganized manner, so no indexing can be performed, no order of elements exist.
+    - Dictionary contains data in the form of key and vlaue pairs. Keys should be immutable objects, values are mutable.
+
+    - Set only allows immutable objects to be entered.
+    - Dictionary can store any kind of data according to the key value pairs rules.
+
+20. Program to demonstrate all the datatypes:
+    a = 5
+    type(a) # int
+
+    a = 4.5
+    type(a) # float
+
+    a = "wow"
+    type(a) # string
+
+    a = 3+5j
+    type(a) # complex
+
+    a = [6, 4.5, "hello"]
+    type(a) # list
+
+    a = (4.5, "wow", "10000")
+    type(a) # tuple
+
+    a = {1,4.5, "yess", 5+8j, 1}
+    type(a) # set
+
+    a = {
+        1: 2,
+        2: 23,
+        3: "right",
+        True: False,
+    }
+    type(a) # dict
+            
+
+Day 3
+
+21. Take input from user and print it.
+    ans = input(" whats your answer")
+    print(ans)
+
+22. Add two numbers using user input.
+    a= int(input("first number"))
+    b= int(input("second number"))
+    res = a+b
+    print(res)
+
+23. Arithematic operators:
+    These are the operators which has the job to perform mathematical operations.
+    + -> Addition
+    - -> Subtraction
+    * -> Multiplication
+    / -> Division
+    // -> Floor Division
+    % -> Modulus
+    ** -> Power
+
+24. Relational operators:
+    These are the operators which perform the comparision between two values and return the result in boolean( True or False):
+    < - less than
+    > - greater than
+    <= - less than equal to 
+    >= - greater than equal to
+    == equals to
+    != not equals to
+
+25. Logical operators:
+    These operators perform logical comparision on two values:
+    and - returns true only if both conditions are satisfied, else False
+    or - returns true even if single conditions is satisfies, else False
+    not - negates the result
+    xor - returns true if both the conditions are different, else False
+
+26. Assignment operators:
+    These are the operators which are used to assign a value to the variable:
+    = - Assignment
+    += - e.g a+=1 same as a = a+ 1
+    -= - e.g a-=1 same as a = a- 1
+    *= - e.g a*=1 same as a = a* 1
+    /= - e.g a/=1 same as a = a/ 1
+
+27. Find the largest of two numbers
+    a = int(input())
+    b = int(input())
+    c = a>b
+    if c == True:
+        print("Largest number: ",a)
+
+    else
+        print("Largest number: ",b)
+
+28. Calculate area of a circle.
+    r = int(input(" Enter Radius:"))
+    area = 3.14*r*r
+    print("Area of circle: ", area)
+
+29. Swap two variables.
+    a = 5
+    b = 2
+    # Swapping code
+    temp = a
+    a = b
+    b = temp
+    # variables swapped
+
+30. Find quotient and remainder.
+    a= 10
+    b=3
+    quotient = a//b
+    remainder = a%b
+
+    

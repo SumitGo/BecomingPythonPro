@@ -1,0 +1,46 @@
+Python 3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> complex(5,3)
+(5+3j)
+>>> c = complex(3+7j)
+>>> print(c)
+(3+7j)
+>>> c = complex(3-3j)
+>>> print(c)
+(3-3j)
+>>> a= 5
+>>> =1j
+  File "<stdin>", line 1
+    =1j
+    ^
+SyntaxError: invalid syntax
+>>> a= 5+7j
+>>> print(a)
+(5+7j)
+>>> b=8j
+>>> print(b)
+8j
+>>> type(a,b)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: type() takes 1 or 3 arguments
+>>> type(a)
+<class 'complex'>
+>>> type(b)
+<class 'complex'>
+>>> bool(a)
+True
+>>> bool(b)
+True
+>>> d= 0+0j
+>>> bool(d)
+False
+>>> e= 0j
+>>> bool(e)
+False
+>>> f= complex()
+>>> type(f)
+<class 'complex'>
+>>> bool(f)
+False
+>>> exit()
